@@ -1,0 +1,23 @@
+'administer commerce akeneo':
+   title: 'Administer Commerce Akeneo'
+   description: 'Perform administration for Commerce Akeneo'
+
+'resource product commerce akeneo':
+   title: 'Service: {service}'
+   description: "Save a product based on it's SKU (create/update)."
+
+'resource group commerce akeneo':
+   title: 'Service: {service}',
+   description: "Store product group."
+ 
+'resource family commerce akeneo':
+   title: 'Service: {service}'
+   description: 'Synchronize families (product variant).'
+
+'resource category commerce akeneo':
+   title: 'Service: {service}'
+   description: 'Synchronize categories.'
+
+'resource attribute option commerce akeneo':
+   title: 'Service: {service}'
+   description: 'Synchronize attributes options (taxonomies).'

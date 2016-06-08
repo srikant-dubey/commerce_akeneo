@@ -1,0 +1,19 @@
+name: 'Commerce Akeneo'
+type: module
+description: 'Provides connectivity between Drupal Commerce and Akeneo PIM (Product Information Management).'
+package: Custom Commerce (product)
+core: 8.x
+configure: akeneo.admin
+
+dependencies:
+ - commerce_product
+ - entity_translation
+ - i18n
+ - i18n_string
+ - i18n_taxonomy
+ - libraries
+ - rest_server
+ - services
+
+version: VERSION
+
