@@ -3,7 +3,7 @@ type: module
 description: 'Provides connectivity between Drupal Commerce and Akeneo PIM (Product Information Management).'
 package: Custom Commerce (product)
 core: 8.x
-configure: action.admin
+configure: commerce_akeneo.service_config
 
 dependencies:
 # - commerce_product

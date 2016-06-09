@@ -22,4 +22,7 @@ commerce_akeneo.service_config:
     _title: 'Commerce Akeneo Connector'
     _description: 'Configure the Akeneo Connector settings for Drupal Commerce.'
   requirements:
-    _permission: 'adminster commerce akeneo'
+    _permission: 'administer commerce akeneo'
+
+
+     
