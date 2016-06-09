@@ -1,0 +1,7 @@
+commerce_akeneo_prefix_category: catalog_
+commerce_akeneo_prefix_option: option_
+commerce_akeneo_prefix_field: akeneo_
+commerce_akeneo_prefix_field_category: catalog_
+commerce_akeneo_prefix_field_association: related_
+commerce_akeneo_prefix_group: group_
+commerce_akeneo_prefix_product: product_

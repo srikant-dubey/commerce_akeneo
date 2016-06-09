@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Install file for Commerce Akeneo module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function commerce_akeneo_install() {
+   /**
+    * set the value for Akeneo service Config 
+    */
+   \Drupal::configFactory()->getEditable('commerce_akeneo.service_config')
+	->set('commerce_akeneo_prefix_category', 'catalog_')
+	->set('commerce_akeneo_prefix_option', 'option_')
+	->set('commerce_akeneo_prefix_field', 'akeneo_')
+	->set('commerce_akeneo_prefix_field_category', 'catalog_')
+	->set('commerce_akeneo_prefix_field_association', 'related_')
+	->set('commerce_akeneo_prefix_group', 'group_')
+	->set('commerce_akeneo_prefix_product', 'product_')
+	->save();
+    
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function commerce_akeneo_uninstall() {
+	/**
+	 * 
+	 */
+	\Drupal::service('config.factory')->getEditable('commerce_akeneo.service_config')->delete();
+}
+
