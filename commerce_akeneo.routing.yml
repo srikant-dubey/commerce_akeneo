@@ -1,0 +1,25 @@
+akeneo.config:
+  path: '/admin/config/system/action'
+  defaults:
+    _controller: '\Drupal\commerce_akeneo\Controller\AdminConfigController::AdminConfig'
+    _title: 'Akeneo Configuaration'
+  requirements:
+    _permission: 'access content'
+
+admin.config:
+  path: '/admin/config/system/form'
+  defaults:
+    _form: '\Drupal\commerce_akeneo\Form\AdminConfigForm'
+    _title: 'Akeneo Configuaration'
+  requirements:
+    _permission: 'access content'
+
+#Router setttings for akenot service page
+commerce_akeneo.service_config:
+  path: '/admin/config/services/akeneo'
+  defaults:
+    _form: '\Drupal\commerce_akeneo\Form\AkeneoConfigService'
+    _title: 'Commerce Akeneo Connector'
+    _description: 'Configure the Akeneo Connector settings for Drupal Commerce.'
+  requirements:
+    _permission: 'adminster commerce akeneo'
