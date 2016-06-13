@@ -1,0 +1,5 @@
+commerce_akeneo.service_config:
+  title: 'Commerce Akeneo Connector'
+  parent: system.admin_config_services
+  description: 'Configure the Akeneo Connector settings for Drupal Commerce.'
+  route_name: commerce_akeneo.service_config
