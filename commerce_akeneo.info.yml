@@ -7,10 +7,8 @@ configure: commerce_akeneo.service_config
 
 dependencies:
  - commerce_product
-# - entity_translation
-# - i18n
-# - i18n_string
-# - i18n_taxonomy
+ - language
+ - content_translation
 # - libraries
  - rest
 # - services
