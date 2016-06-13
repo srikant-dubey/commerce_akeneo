@@ -6,7 +6,7 @@ core: 8.x
 configure: commerce_akeneo.service_config
 
 dependencies:
-# - commerce_product
+ - commerce_product
 # - entity_translation
 # - i18n
 # - i18n_string
