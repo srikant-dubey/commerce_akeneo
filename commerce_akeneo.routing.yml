@@ -1,11 +1,3 @@
-akeneo.config:
-  path: '/admin/config/system/action'
-  defaults:
-    _controller: '\Drupal\commerce_akeneo\Controller\AdminConfigController::AdminConfig'
-    _title: 'Akeneo Configuaration'
-  requirements:
-    _permission: 'access content'
-
 admin.config:
   path: '/admin/config/system/form'
   defaults:
