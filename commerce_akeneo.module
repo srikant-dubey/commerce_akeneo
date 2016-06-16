@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Module file for Commerce Akeneo module.
+ */
+
+use Drupal\commerce_akeneo\Controller\CommerceAkeneoCtoolsController;
+use Drupal\commerce_akeneo\Controller\CommerceAkeneoApiController;
+use Drupal\commerce_akeneo\Controller\CommerceAkeneoServiceController;
+use Drupal\commerce_akeneo_taxonomy\Controller\CommerceAkeneoTaxonomyController;
+
+$new = new CommerceAkeneoTaxonomyController();
+//$new->commerce_akeneo_taxonomy_handle_service('abc', 'category', 'Category', 'camera_type');
+
+/**
+ * Implements hook_ctools_plugin_api().
+ */
+ 
+function commerce_akeneo_ctools_plugin_api($module, $api) {
+  if ($module == 'services' && $api == 'services') {
+    return array('version' => 3);
+  }
+}
+
