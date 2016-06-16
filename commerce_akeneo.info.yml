@@ -11,7 +11,7 @@ dependencies:
  - content_translation
 # - libraries
  - rest
-# - services
+ - services
 
 version: VERSION
 
