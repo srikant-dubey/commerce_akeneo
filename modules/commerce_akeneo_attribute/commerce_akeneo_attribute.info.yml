@@ -1,0 +1,8 @@
+name: Commerce Akeneo Attribute
+type: module
+description: Add mapping from Akeneo Attributes to Drupal Fields.
+core: 8.x
+package: Commerce
+dependencies:
+  - commerce_akeneo
+ # - commerce_akeneo_family
