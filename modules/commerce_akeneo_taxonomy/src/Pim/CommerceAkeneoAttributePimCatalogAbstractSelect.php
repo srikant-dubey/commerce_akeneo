@@ -6,6 +6,7 @@ namespace Drupal\commerce_akeneo_taxonomy\Pim;
  * CommerceAkeneoAttributePimCatalogAbstractSelect class file.
  */
 
+use Drupal\commerce_akeneo_taxonomy\Controller\CommerceAkeneoTaxonomy;
 /**
  * Class CommerceAkeneoAttributePimCatalogAbstractSelect
  */
@@ -65,7 +66,7 @@ class CommerceAkeneoAttributePimCatalogAbstractSelect extends CommerceAkeneoAttr
    *   Vocabulary machine name.
    */
   protected function loadVocabulary($code, $type = 'option') {
-    if ($taxonomy = commerce_akeneo_taxonomy_load($code, $type)) {
+    if ($taxonomy = CommerceAkeneoTaxonomy::commerce_akeneo_taxonomy_load($code, $type)) {
       return $taxonomy['vocabulary'];
     }
 

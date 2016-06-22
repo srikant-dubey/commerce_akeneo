@@ -2,15 +2,15 @@
 namespace Drupal\commerce_akeneo_taxonomy\Plugins\Services;
 /**
  * @file
- * Contains Drupal\commerce_akeneo_taxonomy\Plugins\Services\CommerceAkeneoTaxonomyOptinService.
+ * Contains Drupal\commerce_akeneo_taxonomy\Plugins\Services\CommerceAkeneoTaxonomyServicesOption.
  */
-use Drupal\commerce_akeneo_taxonomy\CommerceAkeneoTaxonomy;
+use Drupal\commerce_akeneo_taxonomy\Controller\CommerceAkeneoTaxonomy;
 
 /**
- * Class CommerceAkeneoTaxonomyOptinService
+ * Class CommerceAkeneoTaxonomyServicesOption
  * @package Drupal\commerce_akeneo_taxonomy\Plugins\Services.
  */
- class CommerceAkeneoTaxonomyOptinService extends CommerceAkeneoTaxonomy {
+ class CommerceAkeneoTaxonomyServicesOption extends CommerceAkeneoTaxonomy {
 
 	public function commerce_akeneo_taxonomy_services_option($request) {
 	  if (!isset($request['code']) || !is_scalar($request['code'])) {
