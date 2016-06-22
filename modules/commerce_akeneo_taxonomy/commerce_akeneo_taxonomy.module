@@ -6,8 +6,8 @@
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
-use Drupal\commerce_akeneo_taxonomy\Controller\CommerceAkeneoTaxonomyController;
-$taxonomy = new CommerceAkeneoTaxonomyController();
+use Drupal\commerce_akeneo_taxonomy\Controller\CommerceAkeneoTaxonomy;
+$taxonomy = new CommerceAkeneoTaxonomy();
 //$taxonomy->commerce_akeneo_taxonomy_handle_service('abc','category', 'name', '');
 
 /**
