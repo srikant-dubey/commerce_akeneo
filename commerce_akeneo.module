@@ -8,9 +8,9 @@
 use Drupal\commerce_akeneo\Controller\CommerceAkeneoCtoolsController;
 use Drupal\commerce_akeneo\Controller\CommerceAkeneoApiController;
 use Drupal\commerce_akeneo\Controller\CommerceAkeneoServiceController;
-use Drupal\commerce_akeneo_taxonomy\Controller\CommerceAkeneoTaxonomyController;
+use Drupal\commerce_akeneo_taxonomy\Controller\CommerceAkeneoTaxonomy;
 
-$new = new CommerceAkeneoTaxonomyController();
+$new = new CommerceAkeneoTaxonomy();
 //$new->commerce_akeneo_taxonomy_handle_service('abc', 'category', 'Category', 'camera_type');
 
 /**
