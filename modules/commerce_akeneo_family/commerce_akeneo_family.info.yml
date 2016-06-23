@@ -1,0 +1,9 @@
+name: Commerce Akeneo Family
+type: module
+description: Add support for Family.
+core: 8.x
+package: Commerce
+dependencies:
+  - commerce_akeneo
+  - commerce_akeneo_taxonomy
+  - commerce
