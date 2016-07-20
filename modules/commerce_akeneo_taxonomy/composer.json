@@ -1,0 +1,14 @@
+{
+  "name": "drupal/commerce_akeneo_taxonomy",
+  "type": "drupal-module",
+  "description": "Add support for Taxonomy (attribute options and catalog).",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/commerce_akeneo_taxonomy",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/commerce_akeneo_taxonomy",
+    "source": "http://cgit.drupalcode.org/commerce_akeneo_taxonomy"
+  },
+  "require": { }
+}

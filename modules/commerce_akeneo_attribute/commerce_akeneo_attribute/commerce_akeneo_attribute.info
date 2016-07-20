@@ -1,0 +1,18 @@
+name = Commerce Akeneo Attribute
+description = Add mapping from Akeneo Attributes to Drupal Fields.
+package = Commerce (product)
+core = 7.x
+
+dependencies[] = commerce_akeneo
+; Database dependency.
+dependencies[] = commerce_akeneo_family
+
+files[] = includes/CommerceAkeneoAttributeInterface.inc
+files[] = includes/CommerceAkeneoAttributeAbstract.inc
+
+; Information added by Drupal.org packaging script on 2015-04-08
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "commerce_akeneo"
+datestamp = "1428499084"
+

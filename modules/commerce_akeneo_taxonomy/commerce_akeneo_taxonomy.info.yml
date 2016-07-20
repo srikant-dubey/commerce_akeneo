@@ -1,0 +1,8 @@
+name: Commerce Akeneo Taxonomy
+type: module
+description: Add support for Taxonomy (attribute options and catalog).
+core: 8.x
+package: Commerce
+dependencies:
+  #- taxonomy_machine_name
+  - services

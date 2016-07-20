@@ -1,0 +1,14 @@
+{
+  "name": "drupal/commerce_akeneo_migrate",
+  "type": "drupal-module",
+  "description": "Add support for product import using Migrate.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/commerce_akeneo_migrate",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/commerce_akeneo_migrate",
+    "source": "http://cgit.drupalcode.org/commerce_akeneo_migrate"
+  },
+  "require": { }
+}

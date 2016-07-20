@@ -1,0 +1,72 @@
+<?php
+
+/**
+ * @file
+ * Contains commerce_akeneo_attribute.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\commerce_akeneo_attribute\Controller\CommerceAkeneoAttribute;
+
+	
+//$content = CommerceAkeneoAttribute::commerce_akeneo_attribute_mapping();
+//print_r($content);
+
+/**
+ * Implements hook_help().
+ */
+function commerce_akeneo_attribute_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the commerce_akeneo_attribute module.
+    case 'help.page.commerce_akeneo_attribute':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Add mapping from Akeneo Attributes to Drupal Fields.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_ctools_plugin_directory().
+ */
+function commerce_akeneo_attribute_ctools_plugin_directory($owner, $plugin_type) {
+  if ($owner == 'commerce_akeneo') {
+    return "plugins/$plugin_type";
+  }
+}
+
+/**
+ * Implements hook_commerce_akeneo_attribute_mapping_info().
+ */
+function commerce_akeneo_attribute_commerce_akeneo_attribute_mapping_info() {
+  // Skip field creation for SKU Akeneo attribute.
+  $attributes['sku'] = array(
+    'names' => array('sku'),
+    'skip'  => TRUE,
+  );
+
+  return $attributes;
+}
+
+/**
+ * Implements hook_commerce_akeneo_family_delete().
+ */
+function commerce_akeneo_attribute_commerce_akeneo_family_delete($family) {
+	CommerceAkeneoAttribute::commerce_akeneo_attribute_commerce_akeneo_family_delete($family);
+}
+
+/**
+ * Implements hook_field_delete_field().
+ */
+function commerce_akeneo_attribute_field_delete_field($field) {
+ 	CommerceAkeneoAttribute::commerce_akeneo_attribute_field_delete_field($field);
+}
+
+/**
+ * Implements hook_field_delete_instance().
+ */
+function commerce_akeneo_attribute_field_delete_instance($instance) { 
+	CommerceAkeneoAttribute::commerce_akeneo_attribute_field_delete_instance($instance);
+}

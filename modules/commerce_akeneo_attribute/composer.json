@@ -1,0 +1,14 @@
+{
+  "name": "drupal/commerce_akeneo_attribute",
+  "type": "drupal-module",
+  "description": "Add mapping from Akeneo Attributes to Drupal Fields.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/commerce_akeneo_attribute",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/commerce_akeneo_attribute",
+    "source": "http://cgit.drupalcode.org/commerce_akeneo_attribute"
+  },
+  "require": { }
+}

@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains commerce_akeneo_migrate.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function commerce_akeneo_migrate_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the commerce_akeneo_migrate module.
+    case 'help.page.commerce_akeneo_migrate':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Add support for product import using Migrate.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
